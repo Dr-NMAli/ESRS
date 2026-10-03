@@ -1,0 +1,11 @@
+esrs/
+├──            
+└── userstudy/
+    ├── __init__.py
+    ├── tasks.py               ← 3 shopping tasks + catalog slice
+    ├── store.py               ← SQLite response storage
+    ├── questionnaire.py       ← 20 Likert/demographic items
+    ├── app.py                 ← Flask web app for participants
+    ├── simulate.py            ← headless 150-participant simulator
+    ├── analysis.py            ← ANOVA + Tukey + t-tests + Cohen's d
+    └── run_analysis.py        ← CLI: analyze the collected DB

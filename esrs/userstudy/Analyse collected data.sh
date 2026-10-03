@@ -1,0 +1,1 @@
+python -m esrs.userstudy.run_analysis --db esrs_userstudy.sqlite

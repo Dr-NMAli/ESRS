@@ -1,0 +1,24 @@
+[dataset statistics]
+              items  avg_eco    gir
+cat
+Clothing       1200    0.464  0.193
+Electronics    2200    0.512  0.244
+Home           1600    0.491  0.201
+overall avg_eco=0.492  overall GIR=0.213
+
+[data] interactions = 43712  mean/user = 43.7
+[pop] sustainability-oriented users: 219/1000
+[features] X.shape = (5000, 135)
+[encoder] val MSE = 0.00142  (stopped at epoch 47)
+[eval] users evaluated: 1000  |pos|=11  |neg|=89
+
+=== Systems (test split) ===
+System              P@10    R@10   NDCG@10   AvgEco    GIR
+------------------------------------------------------------
+Std RS             0.718   0.652     0.735    0.482  0.211
+PostFilter         0.667   0.606     0.691    0.710  0.646
+ESRS (α=0.6)       0.690   0.627     0.712    0.729  0.681
+
+=== Comparison against the man ===
+Std RS          got=[0.718 0.652 0.735 0.482 0.211]  man=(0.72, 0.65, 0.74, 0.48, 0.21)
+ESRS (α=0.6)    got=[0.69  0.627 0.712 0.729 0.681]  man=(0.69, 0.62, 0.71, 0.73, 0.68)
